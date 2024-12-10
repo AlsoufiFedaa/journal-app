@@ -1,7 +1,7 @@
 
 A simple command-line application that allows users to create, view, and manage their journal entries. The app supports multiple users and persists journal entries in a JSON file.
 
-Features
+# Features
 Create New Journal Entries: Users can add a new journal entry with a title and content.
 List All Journal Entries: Users can view the titles of all their journal entries.
 Support for Multiple Users: Each user has their own set of journal entries.
@@ -10,52 +10,39 @@ Data Persistence: Journal entries are saved in a JSON file, so they persist betw
 Requirements
 Python 3.x
 
-Installation
+# Installation
 Clone this repository to your local machine:
 
-bash
-Copy code
 git clone https://github.com/your-username/journal-app.git
 Navigate into the project directory:
 
-bash
-Copy code
+
 cd journal-app
 Run the app using Python:
 
-bash
-Copy code
 python journal.py
-Usage
+
+# Usage
 Create a New Journal Entry
 To create a new journal entry, use the following command:
 
-bash
-Copy code
+
 python journal.py --create "Contents of a new journal entry" --title "Title of entry"
 List All Journal Entries
 To list all journal entries, use:
 
-bash
-Copy code
 python journal.py --list
 Delete a Specific Journal Entry
 To delete a journal entry, use:
 
-bash
-Copy code
 python journal.py --delete "Title of entry"
 Delete All Journal Entries
 To delete all journal entries (clear the entire journal), use:
 
-bash
-Copy code
 python journal.py --delete-all
 Example
 Here’s an example of how you might use the journaling app:
 
-bash
-Copy code
 # Create a new journal entry
 python journal.py --create "Today I learned Python!" --title "Learning Python"
 
@@ -70,7 +57,7 @@ journals.json: The JSON file that stores the journal entries.
 Data Persistence
 Journal entries are saved in the journals.json file. Each entry consists of a title, content, and timestamp. The file is updated whenever a new entry is created or deleted.
 
-Example of a journal entry in the JSON file:
+# Example of a journal entry in the JSON file:
 
 json
 Copy code
